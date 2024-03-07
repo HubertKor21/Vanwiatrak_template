@@ -1,0 +1,925 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fa-brands{
+    border: 1px solid #686868;
+    color: #686868;
+    padding: 8px;
+}
+
+.fa-brands:hover{
+    border:1px #21748C solid;
+    color: #21748C;
+    
+}
+.fa-sharp{
+    background: #21748C;
+  }
+  .fa-sharp.fa-solid.fa-arrow-up:hover{
+    color: black;
+  }
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 90px;
+    background: black;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+  }
+  nav .navbar{
+    height: 100%;
+    max-width: 1250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    /* background: red; */
+    padding: 0 50px;
+  }
+  .navbar .logo a{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  nav .navbar .nav-links{
+    line-height: 90px;
+    height: 100%;
+    
+  }
+  nav .navbar .links{
+    display: flex;
+    
+  }
+  nav .navbar .links li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 14px;
+    
+  }
+  nav .navbar .links li a{
+    height: 100%;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    
+  }
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow,
+  .links li:hover .pl-arrow{
+    transform: rotate(180deg);
+    }
+  
+  nav .navbar .links li .arrow{
+    /* background: red; */
+    height: 100%;
+    width: 22px;
+    line-height: 90px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  nav .navbar .links li .sub-menu{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    line-height: 40px;
+    background: black;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+    display: none;
+    z-index: 2;
+  }
+  nav .navbar .links li:hover .htmlCss-sub-menu,
+  nav .navbar .links li:hover .js-sub-menu,
+  nav .navbar .links li:hover .pl-sub-menu{
+    display: block;
+  }
+  .navbar .links li .sub-menu li{
+    padding: 0 22px;
+    padding-right: 17px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .navbar .links li .sub-menu a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .navbar .links li .sub-menu .more-arrow{
+    line-height: 40px;
+  }
+  .navbar .links li .sub-menu .more-arrow1{
+    line-height: 40px;
+  }
+  .navbar .links li .sub-menu .more-arrow2{
+    line-height: 40px;
+  }
+  
+  .navbar .links li .sub-menu .more-sub-menu{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 0 4px 4px 4px;
+    z-index: 1;
+    display: none;
+  }
+  .links li .sub-menu .more:hover .more-sub-menu{
+    display: block;
+  }
+  .navbar .search-box{
+    position: relative;
+     height: 40px;
+    width: 40px;
+  }
+  .navbar .search-box i{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .navbar .search-box .input-box{
+    position: absolute;
+    right: calc(100% - 40px);
+    top: 80px;
+    height: 60px;
+    width: 300px;
+    background: black;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+  }
+  .navbar.showInput .search-box .input-box{
+    top: 65px;
+    opacity: 1;
+    pointer-events: auto;
+    background: #3E8DA8;
+  }
+  .navbar .nav-links .sidebar-logo{
+    display: none;
+  }
+  .navbar .bx-menu{
+    display: none;
+  }
+
+
+@media all and (min-width:220px){
+    .busbackground .busbacground-image img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        height: 22vh;
+        width: 75%;
+    }
+    .bus .bus-photo img{
+        height:28vh;
+        clear: both;
+    }
+    .bus .bus-photo {
+        margin: auto;
+        width: 75%;
+    }
+
+    .showcase{
+        background-size:cover ;
+        width: 100%;
+        height: 50vh;
+        text-align: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: white;
+        position: relative;
+        padding-top: 90px;
+    }
+
+
+    .showcase .grid .showcase-text .kontak{
+        margin-top: 50px;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .showcase .grid .showcase-text .numer{
+        border: 1px #005FD3 solid;
+        background: #005FD3;
+        color: white;
+        padding: 10px 60px;
+        border-radius: 25px;
+        font-size: 2.5vh;
+        font-weight: 700;
+    }
+
+    .showcase .grid .showcase-text .numer:hover{
+        background: white;
+        color: black;
+        animation: 1.2s infinite ease-in-out;
+    }
+
+
+    .showcase .grid .showcase-text .PNH{
+        margin-top: 30px;
+        font-size: 3vh;
+        margin-bottom: 40px;
+    }
+
+    .showcase .grid .showcase-text .order{
+        color: white;
+        background: #DD3333;
+        border-radius: 25px;
+        padding: 10px 57px;
+    }
+    .showcase .grid .showcase-text .order:hover{
+        background: white;
+        color: black;
+        animation: 1.2s infinite ease-in-out;
+    }
+
+/* showcase end*/
+
+    .blackbar1{
+        background: black;
+        height: 20px;
+        border: 1px solid black;
+    }
+
+    .uppercase{
+        background: black;
+    }
+
+    .uppercase .uppercase-text h1{
+        text-align: center;
+        background: black;
+        color: white;
+        font-size: 4.5vh;
+        font-weight: 100;
+    }
+
+
+    .uppercase .uppercase-text .uppercase-info{
+        color: white;
+        background: black;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .uppercase #uppercase-border{
+        display: block;
+        content: "";
+        height: 1px;
+        width: 120px;
+        margin: 15px auto 20px;
+        position: relative;
+        background: #21748C;
+    }
+
+    .triplebar{
+        background: black;
+        border: 1px solid black;
+    }
+
+
+    .triplebar .triplebar-text .barone-blue{
+        background: #0099FF;
+        width: 96%;
+        margin: auto;
+        text-align: center;
+        height: 10vh;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-family: Arial;
+        font-weight: 300;
+
+    }
+
+    .triplebar .triplebar-text .barone-blue .barone{
+        color: white;
+        font-size: 3.5vh;
+    }
+
+    .triplebar .triplebar-text .bartwo-orange{
+        background: #EAB435;
+        width: 96%;
+        margin: auto;
+        text-align: center;
+        height: 10vh;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-family: Arial;
+    }
+
+
+    .triplebar .triplebar-text .bartwo-orange .bartwo{
+        color: white;
+        font-size: 3.5vh;
+    }
+
+    .triplebar .triplebar-text .barthree-red{
+        background: #DD3333;
+        width: 96%;
+        margin: auto;
+        text-align: center;
+        height: 10vh;
+        padding-top: 20px;
+        font-family: Arial;
+    }
+
+    .triplebar .triplebar-text .barthree-red .barthree{
+        color: white;
+        font-size: 3.5vh;
+    }
+
+    .drive .drive-text h2{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+    }
+    .drive .drive-text strong{
+        color:black;
+
+    }
+
+    .drive .drive-text p{
+        margin: 10px;
+        color:#686868;
+    }
+
+    .bus{
+        height: 30vh;
+        background: black;
+        padding-top: 10px;
+        border: 1px solid black;
+    }
+
+
+
+    .bus-info .bus-info-text{
+        color: white;
+        background: black;
+        text-align: center;
+        font-size: 1.5vh;
+        border: 1px solid black;
+    }
+
+    .whyworth{
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .whyworth .whitebar{
+        clear: both;
+        width: 100%;
+        height: 60px;
+    }
+
+    .whyworth .whyworth-text h2{
+        padding-bottom: 10px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .whyworth .whyworth-text ul{
+        list-style: square;
+        padding-left: 20px;
+    }
+
+    .whyworth .whyworth-text ul li{
+        margin-bottom: 5px;
+    }
+
+    .schedule{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .whitebar1{
+        height: 50px;
+    }
+
+    .busbackground{
+        background: black;
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 25vh;
+        border: 1px solid black;
+    }
+    
+
+    .schedule .schedule-text-up h2{
+        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+    }
+
+    .schedule .schedule-text-up p{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .schedule .schedule-text-up a{
+        color: black;
+        font-size: large;
+    }
+
+    .schedule .schedule-text-down p{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .schedule .schedule-text-down a{
+        color: black;
+        font-size: large;
+    }
+
+    .blackbar2{
+        height: 40px;
+        background: black;
+        border: 1px solid black;
+    }
+    .footer-grid{
+        background: black;
+        color: #686868;
+        font-size: 13px;
+        overflow: hidden;
+        clear: both;
+        margin: 0 auto;
+        color: #868686;
+        padding: 50px 0;
+        border: 1px solid black;
+        position: relative;
+    }
+    .footer-grid .footer-text{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+    .footer-grid .footer-i{
+        text-align: center;
+        margin: auto;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    .footer-grid .footer-i i{
+        padding: 8px;
+    }
+}
+
+@media all and (min-width:768px){
+    .showcase{
+        width: 100%;
+        height: 60vh;
+    }
+
+    .showcase .grid .showcase-text .kontak{
+        font-size: 15px;
+    }
+
+    .showcase .grid .showcase-text .numer{
+        font-size: 5vh;
+    }
+
+    .showcase .grid .showcase-text .PNH{
+        font-size: 5.5vh;
+    }
+
+    .showcase .grid .showcase-text .order{
+        font-size: 4vh;
+        padding-top: 12px;
+       
+    }
+    .footer-grid .footer-text{
+        width: 50%;
+        float: left;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .footer-grid .footer-i{
+        width: 45%;
+        float: left;
+        margin-top: 0px;
+        text-align: right;
+    }
+}
+@media all and (min-width:1280px){
+
+
+    .uppercase .uppercase-text{
+        width: 75%;
+        margin: auto;
+    }
+
+    .triplebar .triplebar-text{
+        width: 75%;
+        margin: auto;
+        border: 1px solid black;
+    }
+
+    .drive .drive-text{
+        width: 75%;
+        margin: auto;
+    }
+
+    .bus .bus-photo{
+        width: 75%;
+        margin: auto;
+    }
+    .bus .bus-photo img{
+        height:55vh;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+    }
+    .whyworth .whyworth-text{
+        width: 75%;
+        margin: auto;
+    }
+    .schedule-text-up,
+    .schedule .schedule-text-down,
+    .busbackground .busbacground-image{
+        width: 75%;
+        margin: auto;
+    
+    }
+}
+@media all and (min-width:1024px){
+    footer{
+        background: black;
+    }
+    .footer-grid{
+       width: 55%;
+       margin: auto;
+    }
+    .showcase{
+        width: 100%;
+        height: 65vh;
+    }
+
+    .bus{
+        height: 60vh;
+    }
+    .bus .bus-photo img{
+        height: 58vh;
+    }
+    .busbackground{
+        height: 40vh;
+    }
+    .busbackground .busbacground-image img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        clear: both;
+        height: 38vh;
+        width: 75%;
+    }
+
+    .bus-info .bus-info-text{
+        font-size: 2.5vh;
+    }
+
+    .drive .drive-text h2{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .showcase .grid .showcase-text .order{
+        font-size: 5vh;
+    }
+}
+
+.triplebar .triplebar-text .barone-blue,
+.triplebar .triplebar-text .bartwo-orange,
+.triplebar .triplebar-text .barthree-red
+{
+   width: 75%;
+}
+.drive .drive-text h2{
+  padding-bottom: 10px;
+}
+.drive .drive-text p,
+.drive .drive-text h2,
+.whyworth .whyworth-text ul,
+.whyworth .whyworth-text h2,
+.schedule{
+    width: 75%;
+    margin: auto;
+}
+.uppercase .uppercase-info p{
+    width: 78%;
+    margin: auto;
+}
+.bus .bus-photo,
+.busbackground .busbacground-image{
+    
+    background-repeat: no-repeat;
+}
+
+
+.endpage .endpage-text .p-text{
+    width: 50%;
+    float: left;
+}
+
+.endpage .endpage-text .ahref-text {
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+
+.endpage{
+    margin: 0 auto;
+    color: #868686;
+    padding: 50px 0;
+    position: relative;
+    background: black;
+}
+.endpage .endpage-text{
+    width: 75%;
+    margin: auto;
+}
+
+@media all and (min-width:1920px){
+    .showcase{
+        height: 90vh;
+    }
+    .showcase .grid .showcase-text .kontak{
+        margin-top: 130px;
+    }
+    .bus .bus-photo{
+        width: 55%;
+        margin: auto;
+    }
+}
+input[type="checkbox"]{
+    background: #111;
+    display: none;
+}
+#btn{
+    accent-color: #111;
+    background-color: #111;
+}
+@media (max-width:880px){
+    .navbar .bx-menu{
+      display: block;
+    }
+    nav .navbar .nav-links{
+      position: fixed;
+      top: 0;
+      left: -100%;
+      display: block;
+      max-width: 270px;
+      width: 100%;
+      background:  black;
+      line-height: 40px;
+      padding: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.5s ease;
+      z-index: 1000;
+      overflow: scroll;
+    }
+    .navbar .nav-links .sidebar-logo{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .sidebar-logo .logo-name{
+      font-size: 25px;
+      color: #fff;
+    }
+      .sidebar-logo  i,
+      .navbar .bx-menu{
+        font-size: 35px;
+        color: #fff;
+      }
+    nav .navbar .links{
+      display: block;
+      margin-top: 20px;
+    }
+    nav .navbar .links li .arrow{
+      line-height: 40px;
+      font-size: 20px;
+      padding-left: 5px;
+    }
+  nav .navbar .links li{
+      display: block;
+    }
+  nav .navbar .links li .sub-menu{
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    display: none;
+  }
+  nav .navbar .links li .sub-menu li{
+    border-bottom: none;
+  
+  }
+  .navbar .links li .sub-menu .more-sub-menu{
+    display: none;
+    position: relative;
+    left: 0;
+  }
+  .navbar .links li .sub-menu .more-sub-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .links li:hover .htmlcss-arrow,
+  .links li:hover .js-arrow,
+  .links li:hover .pl-arrow{
+    transform: rotate(0deg);
+    }
+    .navbar .links li .sub-menu .more-sub-menu{
+      display: none;
+    }
+    .navbar .links li .sub-menu .more span{
+      /* background: red; */
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+    }
+  
+    .links li .sub-menu .more:hover .more-sub-menu{
+      display: none;
+    }
+    nav .navbar .links li:hover .htmlCss-sub-menu,
+    nav .navbar .links li:hover .js-sub-menu,
+    nav .navbar .links li:hover .pl-sub-menu{
+      display: none;
+    }
+    .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+    .navbar .nav-links.show4 .links .pl-sub-menu,
+    .navbar .nav-links.show3 .links .js-sub-menu,
+    .navbar .nav-links.show2 .links .more .more-sub-menu,
+    .navbar .nav-links.show5 .links .more .more-sub-menu,
+    .navbar .nav-links.show6 .links .more .more-sub-menu{
+        display: block;
+      }
+      .navbar .nav-links.show1 .links .htmlcss-arrow,
+      .navbar .nav-links.show3 .links .js-arrow,
+      .navbar .nav-links.show4 .links .pl-arrow{
+          transform: rotate(180deg);
+  }
+      .navbar .nav-links.show2 .links .more-arrow{
+        transform: rotate(90deg);
+      }
+      .navbar .nav-links.show5 .links .more-arrow1{
+        transform: rotate(90deg);
+      }
+      .navbar .nav-links.show6 .links .more-arrow2{
+        transform: rotate(90deg);
+      }
+}
+@media (max-width:370px){
+    nav .navbar .nav-links{
+    max-width: 100%;
+  } 
+}
+@media all and (max-width: 1100px){
+    nav .navbar{
+        max-width: 100%;
+        padding: 0 25px;
+      }
+      nav .navbar .nav-links{
+        margin-right: 30px;
+      }
+      nav .navbar .logo a{
+        font-size: 27px;
+      }
+      nav .navbar .links li{
+        padding: 0 10px;
+        white-space: nowrap;
+      }
+      nav .navbar .links li a{
+        font-size: 15px;
+      }
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #21748C; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    opacity: 0.70;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+@media all and (orientation:landscape) and (min-device-height: 281px) and (max-device-height: 767px){
+  .showcase{
+    height: 100vh;
+  }
+  .triplebar .triplebar-text .barone-blue,
+  .triplebar .triplebar-text .bartwo-orange,
+  .triplebar .triplebar-text .barthree-red {
+    padding-top: 5px;
+  }
+  .triplebar .triplebar-text .barone-blue .barone,
+  .triplebar .triplebar-text .bartwo-orange .bartwo,
+  .triplebar .triplebar-text .barthree-red .barthree{
+    font-size: 6vh;
+  }
+  .bus{
+    height: 65vh;
+  }
+  .bus .bus-photo img {
+    height: 60vh;
+    clear: both;
+  }
+  .bus-info{
+    height: 5vh;
+  }
+  .bus-info .bus-info-text{
+    font-size: 3vh;
+  }
+  .busbackground{
+    height: 60vh;
+  }
+  .busbackground .busbacground-image img{
+    height: 55vh;
+  }
+}
+@media all and (orientation:landscape) and (max-device-height: 280px){
+  .showcase{
+    height: 110vh;
+  }
+  .triplebar .triplebar-text .barone-blue,
+  .triplebar .triplebar-text .bartwo-orange,
+  .triplebar .triplebar-text .barthree-red {
+    padding-top: 5px;
+  }
+  .triplebar .triplebar-text .barone-blue .barone,
+  .triplebar .triplebar-text .bartwo-orange .bartwo,
+  .triplebar .triplebar-text .barthree-red .barthree{
+    font-size: 6vh;
+  }
+  .showcase .grid .showcase-text .PNH{
+    margin-bottom: 20px;
+  }
+  .bus{
+    height: 65vh;
+  }
+  .bus .bus-photo img {
+    height: 60vh;
+    clear: both;
+  }
+  .bus-info{
+    height: 5vh;
+  }
+  .bus-info .bus-info-text{
+    font-size: 3vh;
+  }
+  .busbackground{
+    height: 50vh;
+  }
+  .busbackground .busbacground-image img{
+    height: 45vh;
+  }
+} 
